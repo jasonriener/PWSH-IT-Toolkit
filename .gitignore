@@ -1,0 +1,11 @@
+# macOS AppleDouble / Finder junk (defensive — should never legitimately appear here)
+._*
+.DS_Store
+
+# Windows shell/Explorer junk
+Thumbs.db
+desktop.ini
+
+# DCU_Installer vendor binaries: large third-party installers, not tracked in git.
+# Obtain and place per DCU_Installer/README.md.
+DCU_Installer/lib/*.exe
