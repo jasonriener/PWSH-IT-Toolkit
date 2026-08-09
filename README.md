@@ -1,6 +1,6 @@
 # PWSH IT Toolkit
 
-A library of Windows PowerShell/cmd tools I built and use day-to-day in campus IT support work — diagnostics, automation for repetitive admin tasks, and one-click fixes for common issues. Public copy of a private working repo, kept fully functional (not a stripped-down showcase version).
+A library of Windows PowerShell/cmd tools built by me and my IT infrastructure team and use day-to-day in campus IT support work — diagnostics, automation for repetitive admin tasks, and one-click fixes for common issues. Public copy of a private working repo, kept fully functional (not a stripped-down showcase version).
 
 References to my institution (LC State) and the specific vendor tools we run (Dell Command Update, Quest KACE) are left in place intentionally — none of it is sensitive (no credentials, hostnames, or internal endpoints), and it's a more honest picture of the actual problems this was built to solve than a genericized version would be.
 
