@@ -1,12 +1,12 @@
 # PWSH IT Toolkit
 
-A library of Windows PowerShell/cmd tools built by me and my IT infrastructure team and use day-to-day in campus IT support work — diagnostics, automation for repetitive admin tasks, and one-click fixes for common issues. Public copy of a private working repo, kept fully functional (not a stripped-down showcase version).
+A library of Windows PowerShell and CMD scripts built by our IT infrastructure team for day-to-day campus IT support - diagnostics, automation for repetitive admin tasks, and one-click fixes for common issues. Public copy of a private working repo, kept fully functional (not a stripped-down showcase version).
 
-References to my institution (LC State) and the specific vendor tools we run (Dell Command Update, Quest KACE) are left in place intentionally — none of it is sensitive (no credentials, hostnames, or internal endpoints), and it's a more honest picture of the actual problems this was built to solve than a genericized version would be.
+References to my institution (LC State) and the specific vendor tools we run (Dell Command Update, Quest KACE) are left in place intentionally - none of it is sensitive (no credentials, hostnames, or internal endpoints), and it's a more honest picture of the actual problems this was built to solve than a genericized version would be.
 
 ## Requirements
 
-- Windows PowerShell 5.1 and/or PowerShell 7 (`pwsh.exe`) — noted per tool below where it matters.
+- Windows PowerShell 5.1 and/or PowerShell 7 (`pwsh.exe`) - noted per tool below where it matters.
 - Several tools self-elevate via a UAC prompt; you'll see a Windows elevation dialog when running them.
 
 ## Tools
