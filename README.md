@@ -17,17 +17,17 @@ References to my institution (LC State) and the specific vendor tools we run (De
 | `DCU_Installer` | Installs .NET 8 Desktop Runtime + Dell Command Update | `DCU_Installer\RUN.cmd` | Yes (self-elevates) |
 | `IT_ToolKit` | Interactive menu for renaming audio devices (generic or fixed classroom names) | `IT_ToolKit\RUN.cmd` | Yes (writes to HKLM) |
 | `Remove_User_Profiles` | Removes local user profiles via CIM, keeps a named profile, supports `-WhatIf`/`-Force` | `Remove_User_Profiles\RUN.cmd` | Yes (self-elevates) |
-| `Misc_Scripts` | Small one-off utilities with no supporting `.ps1` — a KACE inventory kick and an SFC/DISM repair helper | Run each `.cmd` individually | Varies per script |
+| `Misc_Scripts` | Small one-off utilities with no supporting `.ps1` (a KACE inventory kick and an SFC/DISM repair helper) | Run each `.cmd` individually | Varies per script |
 
 ## Repo conventions
 
 - One folder per tool, named `Title_Case_With_Underscores`.
-- Each tool folder contains `RUN.cmd` (the entry point) and a `lib\` subfolder holding everything it depends on — `.ps1` scripts, helper modules, vendor binaries.
+- Each tool folder contains `RUN.cmd` (the entry point) and a `lib\` subfolder holding everything it depends on - `.ps1` scripts, helper modules, vendor binaries.
 - `.ps1` files follow PowerShell's approved Verb-Noun PascalCase convention (e.g. `Set-AudioDeviceName.ps1`).
 - Trivial one-off `.cmd` scripts with no `.ps1` companion live in `Misc_Scripts\` instead of getting a full tool folder.
-- Vendor/third-party binaries are gitignored, not committed — see the relevant tool's own `README.md` for how to obtain them (e.g. `DCU_Installer\README.md`).
+- Vendor/third-party binaries are gitignored, not committed - see the relevant tool's own `README.md` for how to obtain them (e.g. `DCU_Installer\README.md`).
 
 ## Notes on what's *not* here
 
 - No credentials, API keys, or internal network addresses appear anywhere in this repo.
-- `Remove_User_Profiles` defaults to keeping a profile named `lewis` — that's a standing local account convention on our lab/classroom images, not a secret; override it with `-KeepName`.
+- `Remove_User_Profiles` defaults to keeping a profile named `lewis` - that's a standing local account convention on our lab/classroom images, not a secret; override it with `-KeepName`.

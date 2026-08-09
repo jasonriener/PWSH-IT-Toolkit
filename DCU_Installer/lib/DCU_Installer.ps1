@@ -10,7 +10,7 @@
 #>
 
 # ---------------------------------------------------------------------------
-# CONFIG — edit these if the installers are not in the same folder as this script
+# CONFIG - edit these if the installers are not in the same folder as this script
 # ---------------------------------------------------------------------------
 $DotNetInstallerPath = Join-Path $PSScriptRoot "dotnet-desktop-8.0.28-Win-x64.exe"
 $DcuInstallerPath     = Join-Path $PSScriptRoot "dell-command-update-installer.exe"

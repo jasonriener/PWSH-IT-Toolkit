@@ -1,4 +1,4 @@
-# macOS AppleDouble / Finder junk (defensive — should never legitimately appear here)
+# macOS AppleDouble / Finder junk (defensive - should never legitimately appear here)
 ._*
 .DS_Store
 
